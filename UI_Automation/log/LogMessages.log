@@ -1,7 +1,16 @@
-2020-11-22 14:10:53 INFO  PostArticle:24 - Sets up browser driver and open the Url in browser
-2020-11-22 14:11:04 INFO  PostArticle:38 - Clicks on the New post link
-2020-11-22 14:11:04 INFO  PostArticle:41 - Enters the information to post article
-2020-11-22 14:11:05 INFO  PostArticle:48 - Validating if the article is posted or not
-2020-11-22 14:11:07 INFO  PostArticle:52 - Navigates to default homepage
-2020-11-22 14:11:07 INFO  PostArticle:55 - Logoff from the user profile and verify 'newPost'is not visible
-2020-11-22 14:11:22 INFO  PostArticle:30 - Closes the Browser after performing the test
+2020-11-22 16:08:32 INFO  PostArticle:24 - Sets up browser driver and open the Url in browser
+2020-11-22 16:08:46 INFO  PostArticle:38 - Clicks on the New post link
+2020-11-22 16:08:46 INFO  PostArticle:41 - Enters the information to post article
+2020-11-22 16:08:47 INFO  PostArticle:48 - Validating if the article is posted or not
+2020-11-22 16:08:48 INFO  PostArticle:52 - Navigates to default homepage
+2020-11-22 16:08:48 INFO  PostArticle:55 - Logoff from the user profile and verify 'newPost'is not visible
+2020-11-22 16:09:04 INFO  PostArticle:30 - Closes the Browser after performing the test
+2020-11-22 16:09:06 INFO  EditArticle:25 - Sets up browser driver and open the Url in browser
+2020-11-22 16:09:06 DEBUG PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
+2020-11-22 16:09:06 DEBUG PoolingHttpClientConnectionManager:414 - Connection manager shut down
+2020-11-22 16:09:19 INFO  EditArticle:39 - Navigate to user profile and validate the tab
+2020-11-22 16:09:20 INFO  EditArticle:44 - Clicks on edit article and edits the information
+2020-11-22 16:11:26 INFO  EditArticle:48 - Validating if the article is posted or not
+2020-11-22 16:11:26 INFO  EditArticle:52 - Navigates to default homepage
+2020-11-22 16:11:26 INFO  EditArticle:55 - Logoff from the user profile and verify 'newPost'is not visible
+2020-11-22 16:11:41 INFO  EditArticle:31 - Closes the Browser after performing the test

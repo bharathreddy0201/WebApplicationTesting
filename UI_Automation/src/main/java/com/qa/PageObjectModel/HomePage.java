@@ -11,7 +11,6 @@ public class HomePage extends Wait {
 	private static final By UserName = By.xpath("//a[contains(text(),'bharathreddy0201')]");
 	private static final By NewPost = By.xpath("//a[contains(text(),'New Post')]");
 	private static final By Settings = By.xpath("//a[@href='#settings']");
-
 	public static By Sign_in() {
 		return Sign_in;
 	}
