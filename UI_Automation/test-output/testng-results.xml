@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-22T13:10:53Z" name="Default suite" finished-at="2020-11-22T13:11:23Z" duration-ms="30172">
+    <groups>
+    </groups>
+    <test started-at="2020-11-22T13:10:53Z" name="Default test" finished-at="2020-11-22T13:11:23Z" duration-ms="30172">
+      <class name="com.qa.TestScripts.PostArticle">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.TestScripts.PostArticle@53dbe163]" started-at="2020-11-22T14:10:53Z" name="setUpBrowser" finished-at="2020-11-22T14:11:04Z" duration-ms="10873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="postArtcle()[pri:1, instance:com.qa.TestScripts.PostArticle@53dbe163]" started-at="2020-11-22T14:11:04Z" name="postArtcle" description="Verify that user is able to post an article using valid login credentials" finished-at="2020-11-22T14:11:22Z" duration-ms="18156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postArtcle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestScripts.PostArticle@53dbe163]" started-at="2020-11-22T14:11:22Z" name="tearDown" finished-at="2020-11-22T14:11:23Z" duration-ms="1108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.TestScripts.PostArticle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

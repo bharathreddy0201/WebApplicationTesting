@@ -1,0 +1,7 @@
+2020-11-22 14:10:53 INFO  PostArticle:24 - Sets up browser driver and open the Url in browser
+2020-11-22 14:11:04 INFO  PostArticle:38 - Clicks on the New post link
+2020-11-22 14:11:04 INFO  PostArticle:41 - Enters the information to post article
+2020-11-22 14:11:05 INFO  PostArticle:48 - Validating if the article is posted or not
+2020-11-22 14:11:07 INFO  PostArticle:52 - Navigates to default homepage
+2020-11-22 14:11:07 INFO  PostArticle:55 - Logoff from the user profile and verify 'newPost'is not visible
+2020-11-22 14:11:22 INFO  PostArticle:30 - Closes the Browser after performing the test
