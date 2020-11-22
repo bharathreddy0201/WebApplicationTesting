@@ -1,0 +1,45 @@
+
+/*************************************************
+1. Return Employee record with highest salary
+**************************************************/
+SELECT top 1 * FROM Employee
+ORDER BY salary Desc
+
+/*************************************************
+2. Return the highest salary in employee table
+**************************************************/
+SELECT MAX(salary) AS salary FROM Employee
+
+/*************************************************
+3. Return 2nd highest salary from employee table
+**************************************************/
+
+SELECT top 1 salary FROM Employee
+WHERE salary <(SELECT MAX(salary) FROM Employee)
+ORDER BY salary Desc
+
+/*************************************************
+4. Select range of employees based on id
+**************************************************/
+SELECT * FROM Employee WHERE emp_id  BETWEEN 10001 and 10008
+
+/******************************************************************************************
+5. Return an employee with highest salary and the employee’s department name
+*******************************************************************************************/
+
+SELECT top 1 emp_ID,first_name+' '+last_name AS employee_name,salary,department_name
+FROM Employee
+INNER JOIN Department ON Department.department_id= Employee.department_id
+ORDER BY salary Desc
+
+/******************************************************************************************
+6. Return highest salary, employee_name, department_name for EACH department
+*******************************************************************************************/
+SELECT Salary,[employee_name],department_name
+FROM 
+(
+SELECT first_name+' '+last_name AS [employee_name],salary ,department_name
+,ROW_NUMBER() OVER( PARTITION BY department_name ORDER BY Salary DESC) [rank]
+FROM Employee
+INNER JOIN Department ON Department.department_id= Employee.department_id)D
+WHERE [rank]=1
