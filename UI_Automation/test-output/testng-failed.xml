@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.qa.TestScripts.PostArticle">
+      <class name="com.qa.TestScripts.EditArticle">
         <methods>
-          <include name="tearDown"/>
           <include name="setUpBrowser"/>
-          <include name="postArtcle"/>
+          <include name="editArtcle"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.TestScripts.PostArticle -->
+      </class> <!-- com.qa.TestScripts.EditArticle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -16,8 +16,8 @@ import com.qa.utils.BrowserInteraction;
 import io.qameta.allure.*;
 
 @Owner("Bharath Varikuti")
-public class EditArticle extends BaseTest {
-	final static Logger log = Logger.getLogger(EditArticle.class.getName());
+public class AddComment extends BaseTest {
+	final static Logger log = Logger.getLogger(AddComment.class.getName());
 	HomePage homepage = new HomePage();
 
 	@BeforeMethod
@@ -32,30 +32,28 @@ public class EditArticle extends BaseTest {
 		super.tearDown();
 	}
 
-	@Test(priority = 1, description = "Verify that user is able to edit an article from the available articles in his profile")
+	@Test(priority = 1, description = "Verify that user is able to add  and post commets to an article from the available articles in his profile")
 	@Severity(SeverityLevel.BLOCKER)
 	public void editArtcle() {
 
 		log.info("Navigate to user profile and validate the tab");
 		BrowserInteraction.clickElementBy(HomePage.UserName());
 		BrowserInteraction.waitUntilElementIsPresent(Articels.EditProfile());
-		BrowserInteraction.clickusingjavaScriptExecutor(Articels.Article());
+		BrowserInteraction.clickElementBy(Articels.Article());
 
-		log.info("Clicks on edit article and edits the information");
-		BrowserInteraction.clickElementBy(Comments.EditArticle());
-		BrowserInteraction.clearAndfillInFieldWith(PublishArticle.Hashtag(), prop.getProperty("UpdatedHashtag"));
-		BrowserInteraction.clickusingjavaScriptExecutor(PublishArticle.PublishArticleBtn());
-
-		log.info("Validating if the article is posted or not");
-		String Articletitle = BrowserInteraction.GetText(Comments.Header());
-		Assert.assertEquals(Articletitle, prop.getProperty("ArticleTitle"));
+		log.info("Add the Comments to the article and click on post comment and validate");
+		BrowserInteraction.clearAndfillInFieldWith(Comments.comment(), prop.getProperty("comment"));
+		BrowserInteraction.clickusingjavaScriptExecutor(Comments.PostCmtBtn());
+		BrowserInteraction.waitUntilElementIsPresent(Comments.CommentTest());
+		//String CommentActual = BrowserInteraction.GetText(Comments.CommentTest());		
+		//Assert.assertEquals(CommentActual, prop.getProperty("comment"));
 
 		log.info("Navigates to default homepage");
 		Constants.SHORT_WAIT();
-		BrowserInteraction.clickElementBy(HomePage.HOME_PAGE());
+		BrowserInteraction.clickusingjavaScriptExecutor(HomePage.HOME_PAGE());
 
 		log.info("Logoff from the user profile and verify 'newPost'is not visible");
-		BrowserInteraction.clickElementBy(HomePage.Settings());
+		BrowserInteraction.clickusingjavaScriptExecutor(HomePage.Settings());
 		Constants.SHORT_WAIT();
 		BrowserInteraction.clickusingjavaScriptExecutor(Settings.logoutlink());
 		BrowserInteraction.ValidateElementnotVisible(HomePage.NewPost());

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="com.qa.TestScripts.PostArticle">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUpBrowser"/>
+        </methods>
+      </class> <!-- com.qa.TestScripts.PostArticle -->
+      <class name="com.qa.TestScripts.AddComment">
+        <methods>
+          <include name="editArtcle"/>
+          <include name="setUpBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.TestScripts.AddComment -->
+      <class name="com.qa.TestScripts.EditArticle">
+        <methods>
+          <include name="setUpBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.TestScripts.EditArticle -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

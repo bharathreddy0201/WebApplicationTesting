@@ -5,6 +5,7 @@
     <classes>
       <class name="com.qa.TestScripts.PostArticle"/>
       <class name="com.qa.TestScripts.EditArticle"/>
+      <class name="com.qa.TestScripts.AddComment"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
