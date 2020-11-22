@@ -1,35 +1,32 @@
-2020-11-22 17:54:19 INFO  EditArticle:25 - Sets up browser driver and open the Url in browser
-2020-11-22 17:54:31 INFO  EditArticle:39 - Navigate to user profile and validate the tab
-2020-11-22 17:54:32 INFO  EditArticle:44 - Clicks on edit article and edits the information
-2020-11-22 17:54:33 INFO  EditArticle:49 - Validating if the article is posted or not
-2020-11-22 17:55:36 INFO  EditArticle:31 - Closes the Browser after performing the test
-2020-11-22 17:58:35 INFO  PostArticle:24 - Sets up browser driver and open the Url in browser
-2020-11-22 17:58:47 INFO  PostArticle:38 - Clicks on the New post link
-2020-11-22 17:58:48 INFO  PostArticle:41 - Enters the information to post article
-2020-11-22 17:58:48 INFO  PostArticle:48 - Validating if the article is posted or not
-2020-11-22 17:58:50 INFO  PostArticle:52 - Navigates to default homepage
-2020-11-22 17:58:50 INFO  PostArticle:55 - Logoff from the user profile and verify 'newPost'is not visible
-2020-11-22 17:59:05 INFO  PostArticle:30 - Closes the Browser after performing the test
-2020-11-22 17:59:07 INFO  EditArticle:25 - Sets up browser driver and open the Url in browser
-2020-11-22 17:59:11 DEBUG PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
-2020-11-22 17:59:11 DEBUG PoolingHttpClientConnectionManager:414 - Connection manager shut down
-2020-11-22 17:59:22 INFO  EditArticle:39 - Navigate to user profile and validate the tab
-2020-11-22 17:59:23 INFO  EditArticle:44 - Clicks on edit article and edits the information
-2020-11-22 17:59:24 INFO  EditArticle:49 - Validating if the article is posted or not
-2020-11-22 17:59:25 INFO  EditArticle:53 - Navigates to default homepage
-2020-11-22 17:59:25 INFO  EditArticle:57 - Logoff from the user profile and verify 'newPost'is not visible
-2020-11-22 17:59:41 INFO  EditArticle:31 - Closes the Browser after performing the test
-2020-11-22 17:59:41 INFO  AddComment:25 - Sets up browser driver and open the Url in browser
-2020-11-22 17:59:42 DEBUG PoolingHttpClientConnectionManager:408 - Connection manager is shutting down
-2020-11-22 17:59:42 DEBUG PoolingHttpClientConnectionManager:414 - Connection manager shut down
-2020-11-22 17:59:51 INFO  AddComment:39 - Navigate to user profile and validate the tab
-2020-11-22 17:59:51 INFO  AddComment:44 - Add the Comments to the article and click on post comment and validate
-2020-11-22 18:00:53 INFO  AddComment:51 - Navigates to default homepage
-2020-11-22 18:00:53 INFO  AddComment:55 - Logoff from the user profile and verify 'newPost'is not visible
-2020-11-22 18:01:08 INFO  AddComment:31 - Closes the Browser after performing the test
-2020-11-22 19:30:15 INFO  markFavorite:23 - Sets up browser driver and open the Url in browser
-2020-11-22 19:30:31 INFO  markFavorite:37 - Navigate to user profile and validate the tab
-2020-11-22 19:30:32 INFO  markFavorite:41 - Click on favorite icon and navigate to favorite tab to validate
-2020-11-22 19:31:19 INFO  markFavorite:46 - Navigates to default homepage
-2020-11-22 19:31:22 INFO  markFavorite:50 - Logoff from the user profile and verify 'newPost'is not visible
-2020-11-22 19:31:40 INFO  markFavorite:29 - Closes the Browser after performing the test
+2020-11-22 20:11:21 INFO  PostArticle:25 - Sets up browser driver and open the Url in browser
+2020-11-22 20:11:42 INFO  PostArticle:39 - Clicks on the New post link
+2020-11-22 20:11:42 INFO  PostArticle:42 - Enters the information to post article
+2020-11-22 20:11:43 INFO  PostArticle:49 - Validating if the article is posted or not
+2020-11-22 20:11:45 INFO  PostArticle:53 - Navigates to default homepage
+2020-11-22 20:11:45 INFO  PostArticle:56 - Logoff from the user profile and verify 'newPost'is not visible
+2020-11-22 20:12:03 INFO  PostArticle:31 - Closes the Browser after performing the test
+2020-11-22 20:24:43 INFO  EditArticle:26 - Sets up browser driver and open the Url in browser
+2020-11-22 20:25:02 INFO  EditArticle:40 - Navigate to user profile and validate the tab
+2020-11-22 20:25:03 INFO  EditArticle:45 - Clicks on edit article and edits the information
+2020-11-22 20:25:07 INFO  EditArticle:51 - Validating if the article is posted or not
+2020-11-22 20:25:09 INFO  EditArticle:55 - Navigates to default homepage
+2020-11-22 20:25:12 INFO  EditArticle:59 - Logoff from the user profile and verify 'newPost'is not visible
+2020-11-22 20:25:30 INFO  EditArticle:32 - Closes the Browser after performing the test
+2020-11-22 20:26:38 INFO  AddComment:24 - Sets up browser driver and open the Url in browser
+2020-11-22 20:26:59 INFO  AddComment:38 - Navigate to user profile and validate the tab
+2020-11-22 20:27:00 INFO  AddComment:43 - Add the Comments to the article and click on post comment and validate
+2020-11-22 20:28:01 INFO  AddComment:48 - Navigates to default homepage
+2020-11-22 20:28:04 INFO  AddComment:52 - Logoff from the user profile and verify 'newPost'is not visible
+2020-11-22 20:28:22 INFO  AddComment:30 - Closes the Browser after performing the test
+2020-11-22 20:29:54 INFO  markFavorite:23 - Sets up browser driver and open the Url in browser
+2020-11-22 20:30:13 INFO  markFavorite:37 - Navigate to user profile and validate the tab
+2020-11-22 20:30:14 INFO  markFavorite:41 - Click on favorite icon and navigate to favorite tab to validate
+2020-11-22 20:30:29 INFO  markFavorite:46 - Navigates to default homepage
+2020-11-22 20:30:32 INFO  markFavorite:50 - Logoff from the user profile and verify 'newPost'is not visible
+2020-11-22 20:30:50 INFO  markFavorite:29 - Closes the Browser after performing the test
+2020-11-22 20:33:15 INFO  deleteArticle:24 - Sets up browser driver and open the Url in browser
+2020-11-22 20:33:34 INFO  deleteArticle:38 - Navigate to user profile and validate the tab
+2020-11-22 20:33:35 INFO  deleteArticle:43 - Clicks on delete article and validate
+2020-11-22 20:33:54 INFO  deleteArticle:48 - Navigates to default homepage
+2020-11-22 20:33:54 INFO  deleteArticle:51 - Logoff from the user profile and verify 'newPost'is not visible
+2020-11-22 20:34:12 INFO  deleteArticle:30 - Closes the Browser after performing the test

@@ -6,12 +6,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.qa.baseTest.BaseTest;
-import com.qa.constants.Constants;
 import com.qa.PageObjectModel.Comments;
 import com.qa.PageObjectModel.HomePage;
 import com.qa.PageObjectModel.PublishArticle;
 import com.qa.PageObjectModel.Settings;
 import com.qa.utils.BrowserInteraction;
+import com.qa.utils.TimeUtil;
+
 import io.qameta.allure.*;
 
 @Owner("Bharath Varikuti")
@@ -54,7 +55,7 @@ public class PostArticle extends BaseTest {
 
 		log.info("Logoff from the user profile and verify 'newPost'is not visible");
 		BrowserInteraction.clickElementBy(HomePage.Settings());
-		Constants.SHORT_WAIT();
+		TimeUtil.shortWait();
 		BrowserInteraction.clickusingjavaScriptExecutor(Settings.logoutlink());
 		BrowserInteraction.ValidateElementnotVisible(HomePage.NewPost());
 	}

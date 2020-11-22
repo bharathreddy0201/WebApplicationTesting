@@ -6,13 +6,14 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.qa.baseTest.BaseTest;
-import com.qa.constants.Constants;
 import com.qa.PageObjectModel.Articels;
 import com.qa.PageObjectModel.Comments;
 import com.qa.PageObjectModel.HomePage;
 import com.qa.PageObjectModel.PublishArticle;
 import com.qa.PageObjectModel.Settings;
 import com.qa.utils.BrowserInteraction;
+import com.qa.utils.TimeUtil;
+
 import io.qameta.allure.*;
 
 @Owner("Bharath Varikuti")
@@ -43,20 +44,21 @@ public class EditArticle extends BaseTest {
 
 		log.info("Clicks on edit article and edits the information");
 		BrowserInteraction.clickElementBy(Comments.EditArticle());
+		TimeUtil.shortWait();
 		BrowserInteraction.clearAndfillInFieldWith(PublishArticle.Hashtag(), prop.getProperty("UpdatedHashtag"));
-		BrowserInteraction.clickusingjavaScriptExecutor(PublishArticle.PublishArticleBtn());
+		BrowserInteraction.clickElementBy(PublishArticle.PublishArticleBtn());
 
 		log.info("Validating if the article is posted or not");
 		String Articletitle = BrowserInteraction.GetText(Comments.Header());
 		Assert.assertEquals(Articletitle, prop.getProperty("ArticleTitle"));
 
 		log.info("Navigates to default homepage");
-		Constants.SHORT_WAIT();
+		TimeUtil.shortWait();
 		BrowserInteraction.clickElementBy(HomePage.HOME_PAGE());
 
 		log.info("Logoff from the user profile and verify 'newPost'is not visible");
 		BrowserInteraction.clickElementBy(HomePage.Settings());
-		Constants.SHORT_WAIT();
+		TimeUtil.shortWait();
 		BrowserInteraction.clickusingjavaScriptExecutor(Settings.logoutlink());
 		BrowserInteraction.ValidateElementnotVisible(HomePage.NewPost());
 	}

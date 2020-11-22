@@ -37,14 +37,14 @@ public class markFavorite extends BaseTest {
 		log.info("Navigate to user profile and validate the tab");
 		BrowserInteraction.clickElementBy(HomePage.UserName());
 		BrowserInteraction.waitUntilElementIsPresent(Articels.EditProfile());
-		
+
 		log.info("Click on favorite icon and navigate to favorite tab to validate");
 		BrowserInteraction.clickElementBy(Articels.ionHeart());
+		TimeUtil.shortWait();
 		BrowserInteraction.clickElementBy(Articels.FavouriteTab());
 		BrowserInteraction.ValidateTextinElement(Articels.Article(), prop.getProperty("ArticleTitle"));
-		
+
 		log.info("Navigates to default homepage");
-		TimeUtil.shortWait();
 		BrowserInteraction.clickusingjavaScriptExecutor(HomePage.HOME_PAGE());
 
 		log.info("Logoff from the user profile and verify 'newPost'is not visible");

@@ -2,24 +2,24 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-22T18:30:15Z" name="Default suite" finished-at="2020-11-22T18:31:42Z" duration-ms="87168">
+  <suite started-at="2020-11-22T19:33:15Z" name="Default suite" finished-at="2020-11-22T19:34:13Z" duration-ms="57858">
     <groups>
     </groups>
-    <test started-at="2020-11-22T18:30:15Z" name="Default test" finished-at="2020-11-22T18:31:42Z" duration-ms="87168">
-      <class name="com.qa.TestScripts.markFavorite">
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.TestScripts.markFavorite@525575]" started-at="2020-11-22T19:30:15Z" name="setUpBrowser" finished-at="2020-11-22T19:30:31Z" duration-ms="16330" status="PASS">
+    <test started-at="2020-11-22T19:33:15Z" name="Default test" finished-at="2020-11-22T19:34:13Z" duration-ms="57858">
+      <class name="com.qa.TestScripts.deleteArticle">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.TestScripts.deleteArticle@525575]" started-at="2020-11-22T20:33:15Z" name="setUpBrowser" finished-at="2020-11-22T20:33:34Z" duration-ms="18994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
-        <test-method signature="editArtcle()[pri:1, instance:com.qa.TestScripts.markFavorite@525575]" started-at="2020-11-22T19:30:31Z" name="editArtcle" description="Verify that user is able to mark the article as favourite" finished-at="2020-11-22T19:31:40Z" duration-ms="69119" status="PASS">
+        <test-method signature="DeleteArticle()[pri:1, instance:com.qa.TestScripts.deleteArticle@525575]" started-at="2020-11-22T20:33:34Z" name="DeleteArticle" description="Verify that user is able to edit an article from the available articles in his profile" finished-at="2020-11-22T20:34:12Z" duration-ms="38030" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editArtcle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestScripts.markFavorite@525575]" started-at="2020-11-22T19:31:40Z" name="tearDown" finished-at="2020-11-22T19:31:42Z" duration-ms="1689" status="PASS">
+        </test-method> <!-- DeleteArticle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestScripts.deleteArticle@525575]" started-at="2020-11-22T20:34:12Z" name="tearDown" finished-at="2020-11-22T20:34:13Z" duration-ms="805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.TestScripts.markFavorite -->
+      </class> <!-- com.qa.TestScripts.deleteArticle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

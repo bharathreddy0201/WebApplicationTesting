@@ -1,18 +1,17 @@
 package com.qa.TestScripts;
 
 import org.apache.log4j.Logger;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.qa.baseTest.BaseTest;
-import com.qa.constants.Constants;
 import com.qa.PageObjectModel.Articels;
 import com.qa.PageObjectModel.Comments;
 import com.qa.PageObjectModel.HomePage;
-import com.qa.PageObjectModel.PublishArticle;
 import com.qa.PageObjectModel.Settings;
 import com.qa.utils.BrowserInteraction;
+import com.qa.utils.TimeUtil;
+
 import io.qameta.allure.*;
 
 @Owner("Bharath Varikuti")
@@ -45,16 +44,14 @@ public class AddComment extends BaseTest {
 		BrowserInteraction.clearAndfillInFieldWith(Comments.comment(), prop.getProperty("comment"));
 		BrowserInteraction.clickusingjavaScriptExecutor(Comments.PostCmtBtn());
 		BrowserInteraction.waitUntilElementIsPresent(Comments.CommentTest());
-		//String CommentActual = BrowserInteraction.GetText(Comments.CommentTest());		
-		//Assert.assertEquals(CommentActual, prop.getProperty("comment"));
 
 		log.info("Navigates to default homepage");
-		Constants.SHORT_WAIT();
+		TimeUtil.shortWait();
 		BrowserInteraction.clickusingjavaScriptExecutor(HomePage.HOME_PAGE());
 
 		log.info("Logoff from the user profile and verify 'newPost'is not visible");
 		BrowserInteraction.clickusingjavaScriptExecutor(HomePage.Settings());
-		Constants.SHORT_WAIT();
+		TimeUtil.shortWait();
 		BrowserInteraction.clickusingjavaScriptExecutor(Settings.logoutlink());
 		BrowserInteraction.ValidateElementnotVisible(HomePage.NewPost());
 	}

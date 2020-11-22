@@ -6,6 +6,8 @@
       <class name="com.qa.TestScripts.PostArticle"/>
       <class name="com.qa.TestScripts.EditArticle"/>
       <class name="com.qa.TestScripts.AddComment"/>
+      <class name="com.qa.TestScripts.markFavorite"/>
+      <class name="com.qa.TestScripts.PostArticle"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
