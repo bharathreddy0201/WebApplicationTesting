@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="3" passed="3" failed="0" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-22T16:58:35Z" name="Suite" finished-at="2020-11-22T17:01:10Z" duration-ms="154454">
+  <suite started-at="2020-11-22T18:30:15Z" name="Default suite" finished-at="2020-11-22T18:31:42Z" duration-ms="87168">
     <groups>
     </groups>
-    <test started-at="2020-11-22T16:58:35Z" name="Test" finished-at="2020-11-22T17:01:10Z" duration-ms="154454">
-      <class name="com.qa.TestScripts.AddComment">
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.TestScripts.AddComment@6ad3381f]" started-at="2020-11-22T17:59:41Z" name="setUpBrowser" finished-at="2020-11-22T17:59:51Z" duration-ms="9185" status="PASS">
+    <test started-at="2020-11-22T18:30:15Z" name="Default test" finished-at="2020-11-22T18:31:42Z" duration-ms="87168">
+      <class name="com.qa.TestScripts.markFavorite">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.TestScripts.markFavorite@525575]" started-at="2020-11-22T19:30:15Z" name="setUpBrowser" finished-at="2020-11-22T19:30:31Z" duration-ms="16330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
-        <test-method signature="editArtcle()[pri:1, instance:com.qa.TestScripts.AddComment@6ad3381f]" started-at="2020-11-22T17:59:51Z" name="editArtcle" description="Verify that user is able to add  and post commets to an article from the available articles in his profile" finished-at="2020-11-22T18:01:08Z" duration-ms="77771" status="PASS">
+        <test-method signature="editArtcle()[pri:1, instance:com.qa.TestScripts.markFavorite@525575]" started-at="2020-11-22T19:30:31Z" name="editArtcle" description="Verify that user is able to mark the article as favourite" finished-at="2020-11-22T19:31:40Z" duration-ms="69119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editArtcle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestScripts.AddComment@6ad3381f]" started-at="2020-11-22T18:01:08Z" name="tearDown" finished-at="2020-11-22T18:01:10Z" duration-ms="1315" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestScripts.markFavorite@525575]" started-at="2020-11-22T19:31:40Z" name="tearDown" finished-at="2020-11-22T19:31:42Z" duration-ms="1689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.TestScripts.AddComment -->
-      <class name="com.qa.TestScripts.EditArticle">
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.TestScripts.EditArticle@78383390]" started-at="2020-11-22T17:59:07Z" name="setUpBrowser" finished-at="2020-11-22T17:59:22Z" duration-ms="14694" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBrowser -->
-        <test-method signature="editArtcle()[pri:1, instance:com.qa.TestScripts.EditArticle@78383390]" started-at="2020-11-22T17:59:22Z" name="editArtcle" description="Verify that user is able to edit an article from the available articles in his profile" finished-at="2020-11-22T17:59:41Z" duration-ms="18966" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editArtcle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestScripts.EditArticle@78383390]" started-at="2020-11-22T17:59:41Z" name="tearDown" finished-at="2020-11-22T17:59:41Z" duration-ms="814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.TestScripts.EditArticle -->
-      <class name="com.qa.TestScripts.PostArticle">
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.qa.TestScripts.PostArticle@5a709816]" started-at="2020-11-22T17:58:35Z" name="setUpBrowser" finished-at="2020-11-22T17:58:47Z" duration-ms="12188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBrowser -->
-        <test-method signature="postArtcle()[pri:1, instance:com.qa.TestScripts.PostArticle@5a709816]" started-at="2020-11-22T17:58:47Z" name="postArtcle" description="Verify that user is able to post an article using valid login credentials" finished-at="2020-11-22T17:59:05Z" duration-ms="17838" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postArtcle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.TestScripts.PostArticle@5a709816]" started-at="2020-11-22T17:59:05Z" name="tearDown" finished-at="2020-11-22T17:59:07Z" duration-ms="1600" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.TestScripts.PostArticle -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.qa.TestScripts.markFavorite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

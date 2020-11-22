@@ -46,6 +46,14 @@ public class Wait extends BasePage {
 		}
 		return true;
 	}
+	public static boolean ValidateTextinElement(By by,String text) {
+		try {
+			getFluentWait().until(ExpectedConditions.textToBePresentInElementLocated(by, text));
+		} catch (TimeoutException e) {
+			return false;
+		}
+		return true;
+	}
 
 
 }

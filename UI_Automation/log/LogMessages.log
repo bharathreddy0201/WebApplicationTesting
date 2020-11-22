@@ -27,3 +27,9 @@
 2020-11-22 18:00:53 INFO  AddComment:51 - Navigates to default homepage
 2020-11-22 18:00:53 INFO  AddComment:55 - Logoff from the user profile and verify 'newPost'is not visible
 2020-11-22 18:01:08 INFO  AddComment:31 - Closes the Browser after performing the test
+2020-11-22 19:30:15 INFO  markFavorite:23 - Sets up browser driver and open the Url in browser
+2020-11-22 19:30:31 INFO  markFavorite:37 - Navigate to user profile and validate the tab
+2020-11-22 19:30:32 INFO  markFavorite:41 - Click on favorite icon and navigate to favorite tab to validate
+2020-11-22 19:31:19 INFO  markFavorite:46 - Navigates to default homepage
+2020-11-22 19:31:22 INFO  markFavorite:50 - Logoff from the user profile and verify 'newPost'is not visible
+2020-11-22 19:31:40 INFO  markFavorite:29 - Closes the Browser after performing the test
