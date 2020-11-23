@@ -33,7 +33,7 @@
 
 
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/testrunner/testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/testrunner/TestSuite.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
@@ -158,17 +158,6 @@
 			<scope>compile</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>3.0.6</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.relevantcodes</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>2.41.2</version>
-		</dependency>
 
 
 	</dependencies>

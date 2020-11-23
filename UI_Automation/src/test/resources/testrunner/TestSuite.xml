@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite" preserve-order="false"
+	thread-count="1" verbose="10">
+	<listeners>
+		<listener class-name="com.qa.listeners.Listener" />
+	</listeners>
+	<test name="PostArticle">
+		<classes>
+			<class name="com.qa.TestScripts.PostArticle" />
+		</classes>
+	</test>
+	<test name="EditArticle">
+		<classes>
+			<class name="com.qa.TestScripts.EditArticle" />
+		</classes>
+	</test>
+	<test name="AddComment">
+		<classes>
+			<class name="com.qa.TestScripts.AddComment" />
+		</classes>
+	</test>
+	<test name="markFavorite">
+		<classes>
+			<class name="com.qa.TestScripts.markFavorite" />
+		</classes>
+	</test>
+	<test name="deleteArticle">
+		<classes>
+			<class name="com.qa.TestScripts.deleteArticle" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
