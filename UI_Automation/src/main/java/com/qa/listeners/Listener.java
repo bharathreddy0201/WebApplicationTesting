@@ -10,12 +10,9 @@ import org.testng.ITestResult;
 import com.qa.base.BasePage;
 
 
-/**
- *
- * @author Bharath
- *
- */
-
+/*
+  * @author Bharath
+*/
 
 public class Listener implements ITestListener {
 

@@ -24,7 +24,7 @@ public class ResultsListener extends BasePage implements ITestListener {
 	public static Object[] getTestParams(ITestResult iTestResult) {
 		return iTestResult.getParameters();
 	}
-	
+
 	public byte[] saveScreenshotPNG(WebDriver driver) {
 		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 	}
@@ -83,12 +83,11 @@ public class ResultsListener extends BasePage implements ITestListener {
 	public void onStart(ITestContext context) {
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public void onFinish(ITestContext iTestContext) {
 		// Map<String, Object> to hold your test results data.
 		Map<String, Object> data = new HashMap<String, Object>();
-		data.put("target","Res.repo");
+		data.put("target", "Res.repo");
 
 		Map<String, Object> results = new HashMap<String, Object>();
 		results.put("cases", testCases);
