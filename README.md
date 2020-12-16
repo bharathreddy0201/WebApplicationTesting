@@ -50,19 +50,7 @@ Below are the list of package and folders which are part of WebApplicationTestin
 
 # Reporting :
 1.	The Reports will be generated and stored in the Allure-results folder .
-2.	The Logging framework messages will be stored in the {{ProjectDirecory}}->Log->LogMessages.log file .
-
-# Task Requirements :
-Task 1 - Web testing
-1.	All the points have been carefully followed and implemented as per the task requirements.
-2.	Manual test cases step by step for each script are documented and stored in {{ProjectDirecory}}->TestCases.xlsx.
-
-Task 2 - SQL Task 
-1.	The Queries are documented and stored in  {{ProjectDirecory}}->SQL_Queries.txt.
-
-Task 3 - Jenkins Task 
-1.	The Jenkins configuration file with step by step description and screenshots and stored in {{ProjectDirecory}}->JenkinsConfiguration.pdf.
-
+2.	The Logging framework messages will be stored in the {{ProjectDirecory}}->Log->LogMessages.log 
 
 # How to Run the Test from Eclipse IDE &  CMD Terminal :
 1. Select project and right click on src/test/java and Run As->Java Application/ TestNG Test.
